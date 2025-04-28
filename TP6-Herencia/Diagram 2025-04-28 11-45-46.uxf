@@ -1,0 +1,25 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>420</x><y>140</y><w>210</w><h>90</h></coordinates><panel_attributes>/Empleado/
+--
+- numeroDNI: int
+- nombre: String
+- apellido: String
+- añoIngreso: int
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>130</y><w>240</w><h>110</h></coordinates><panel_attributes>AdministracionDePersonal
+--
+--
++ mostrarSalarios()
++ empleadoConMasClientes(): Empleado
++ getEmpleado(): Empleado
++ agregarEmpleado(Empleado)
++ borrarEmpleado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>170</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-Empleados
+m1=1..n</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>380</y><w>210</w><h>50</h></coordinates><panel_attributes>EmpleadoPorComision
+--
+- salarioMinimo: double
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>380</y><w>210</w><h>50</h></coordinates><panel_attributes>EmpleadoPorSalarioFijo
+--
+- sueldoBasico: double
+--
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>220</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>220</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element></diagram>
