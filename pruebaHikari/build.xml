@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="pruebaHikari" default="compile" basedir=".">
+    <import file="nbproject/build-impl.xml"/>
+    <property name="lib.dir" value="Libraries"/>
+
+    <path id="project.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="compile">
+        <mkdir dir="${build.dir}/classes"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}/classes"
+               debug="on"
+               includeantruntime="false">
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+</project>
